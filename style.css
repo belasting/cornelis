@@ -50,7 +50,7 @@ canvas#snow {
   filter: invert(1);
 }
 
-.views {
+.dev {
   display: block;
   margin-top: 1rem;
   opacity: 0.8;
