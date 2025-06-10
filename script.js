@@ -45,3 +45,15 @@ window.addEventListener('DOMContentLoaded', () => {
     audio.play().catch(e => console.warn('Autoplay blocked:', e));
   }, 500); // korte delay helpt soms
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+  const audio = document.getElementById('bg-music');
+  const overlay = document.getElementById('enter-overlay');
+  const background = document.querySelector('.background');
+
+  overlay.addEventListener('click', () => {
+    overlay.style.display = 'none';
+    background.style.filter = 'none';
+    audio.play().catch(e => console.warn('Autoplay blocked:', e));
+  });
+});
